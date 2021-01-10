@@ -23,7 +23,7 @@ You can use api `http://localhost:3000/user_registration` (Post Method) for user
 1. User role for Initial record will be always Admin role and for rest of the records will be Manager role.
 
 ## Demo
-https://user-images.githubusercontent.com/76727622/104125741-c28df500-537e-11eb-9988-e0d3fe42aa52.mp4
+![Video-16103079481](https://user-images.githubusercontent.com/76727622/104126209-5fea2880-5381-11eb-9f93-9d4774a11a68.gif)
 
 
 ## Screenshots
