@@ -1,0 +1,19 @@
+{
+  "name": "appiness-user-management-app",
+  "version": "1.0.0",
+  "description": "appiness user management task",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js"
+  },
+  "author": "Subramani S Gowda",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11",
+    "validator": "^13.5.2"
+  }
+}
