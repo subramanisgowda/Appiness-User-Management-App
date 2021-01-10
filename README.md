@@ -5,7 +5,7 @@ User management application to maintain users and role details in database, on u
 Before running the application please make sure to install all necessary npm packages using command `npm install`. Add mongodb credentials in `.env` file and make sure mongodb server is up and running.
 
 ### Development Server
-Run `npm start` for node.js express server. After you run the command, wait until the the application starts and test by calling api `http://localhost:3000/` in a browser or in a postman by get method.
+Run `npm start` or `node src/server.js` for express server. After you run the command, wait until the the application starts and test by calling api `http://localhost:3000/` in a browser or in a postman by get method.
 
 ## User Registration API
 You can use api `http://localhost:3000/user_registration` (Post Method) for user registration by passing below json in post body
