@@ -25,7 +25,7 @@ const users_schema = mongoose.Schema({
         }
     },
     user_mobile_number:{
-        type: String,
+        type: Number,
         required:true,
     },
     created_at : {

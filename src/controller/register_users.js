@@ -27,7 +27,7 @@ async function user_registration(req, res) {
         // User Roles Data
         users_role_data = new user_role_model({
             user,
-            user_role: get_users.length == 0 ? 'Admin' : 'User'  // Deciding  User Role based on Condition 
+            user_role: get_users.length == 0 ? 'Admin' : 'Manager'  // Deciding  User Role based on Condition 
         });
 
         // Save Both User and User Role Details 
