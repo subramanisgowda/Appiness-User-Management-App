@@ -17,9 +17,9 @@ You can use api `http://localhost:3000/user_registration` (Post Method) for user
 }
 ```
 #### Validations
-1. In above json all are required feilds, if one feild missedout API will throw error.
+1. In above json all are required fields, if one field missing API will throw error.
 1. User Email should be valid.
-1. Duplicate Entry validation based in the User.
+1. Duplicate Entry validation based on the User.
 1. User role for Initial record will be always Admin role and for rest of the records will be Manager role.
 
 ## Demo
