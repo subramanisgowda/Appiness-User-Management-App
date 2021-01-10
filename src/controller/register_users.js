@@ -9,7 +9,7 @@ const user_role_model = require('../models/users_roles_model.js');
 async function user_registration(req, res) {
 
     // Assigning values to individual fields from request body.
-    const user_name = req.body.user_name;
+    const user = req.body.user;
     const user_email = req.body.user_email;
     const user_mobile_number = req.body.user_mobile_number;
 
@@ -19,14 +19,14 @@ async function user_registration(req, res) {
 
         // Users Data
         users_data = new users_model({
-            user_name,
+            user,
             user_email,
             user_mobile_number
         });
 
         // User Roles Data
         users_role_data = new user_role_model({
-            user_name,
+            user,
             user_role: get_users.length == 0 ? 'Admin' : 'User'  // Deciding  User Role based on Condition 
         });
 
@@ -42,9 +42,12 @@ async function user_registration(req, res) {
         });
     } catch (err) {
         console.log(err);
-        // Sending Response back to the requestor   
-        res.status(200);
-        res.json({ err });
+        // Sending Error Response back to the requestor   
+        res.status(400);
+        res.json({
+            Status : 1,
+            Error : err.message.split(',')
+        });
 
     }
 }

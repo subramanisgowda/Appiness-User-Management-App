@@ -7,10 +7,11 @@ const mongo_db = require('../config/db_connection');  // imports mongodb connect
 
 // Mongoose Schema for Users Collection
 const users_schema = mongoose.Schema({
-    user_name:{
+    user:{
         type:String,
         required:true,
         trim: true,
+        unique : true
     },
     user_email : {
         type: String,
@@ -26,6 +27,10 @@ const users_schema = mongoose.Schema({
     user_mobile_number:{
         type: String,
         required:true,
+    },
+    created_at : {
+        type : Date,
+        default:Date.now
     }
 
 });

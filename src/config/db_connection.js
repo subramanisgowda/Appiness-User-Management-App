@@ -8,6 +8,8 @@ const database_name = process.env.DATABASE_NAME
 // Mongodb Connection URL
 const connection_url = `mongodb://${db_host}:${db_port}/${database_name}`
 
+mongoose.set('useCreateIndex', true);
+
 //Connect to Mongodb using mongoose library.
 mongoose.connect(connection_url,{ useNewUrlParser: true,useUnifiedTopology: true }).then(() => {
     console.log('Connected to Database Sucesssfully');
